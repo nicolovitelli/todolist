@@ -25,7 +25,7 @@
 				<tr th:each="task : ${listTask}">
 					<td th:text="${task.description}"></td>
 					<td th:text="${task.status}"></td>
-					<td><a th:href="@{/showFormForUpdate/{id}(id=${task.id})}" class="btn btn-primary">Aggiorna</a>
+					<td><a th:href="@{/showFormForUpdate/{id}(id=${task.id})}" class="btn btn-primary">Modifica</a>
 						<a th:href="@{/deleteTask/{id}(id=${task.id})}" class="btn btn-danger">Elimina</a></td>
 				</tr>
 			</tbody>
